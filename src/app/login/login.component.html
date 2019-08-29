@@ -1,0 +1,21 @@
+<p>Please enter your credentials to authorise the client app</p>
+
+<form class="login">
+  <mat-form-field class="username">
+    <input matInput placeholder="User Name"/>
+  </mat-form-field>
+
+  <mat-form-field class="password">
+    <input
+      id="password"
+      matInput
+      [type]="showPassword ? 'text' : 'password'"
+      placeholder="Password"
+      formControlName="password"
+      class="form-control"
+      autocomplete="new-password"
+    />
+  </mat-form-field>
+
+  <button mat-button id="authorise-btn" (click)="authorise()">Login</button>
+</form>
