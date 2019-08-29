@@ -1,0 +1,10 @@
+mat-card {
+  max-width: 420px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+mat-form-field,
+button {
+  display: block;
+}
